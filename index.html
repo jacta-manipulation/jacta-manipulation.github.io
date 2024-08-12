@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Jacta is a manipulation planner for learning dexterous and whole-body robotic manipulation">
+  <meta name="keywords" content="Jacta, Robotic, Manipulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jacta: A Versatile Planner for Learning Dexterous and Whole-body Manipulation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Jacta: A Versatile Planner for Learning Dexterous and Whole-body
+              Manipulation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=WzraUrIAAAAJ">Jan Brüdigam</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=-PdPv0IAAAAJ">Ali Adeeb Abbas</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=tFuFXuMAAAAJ">Maks Sorokin</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=BZBkjNYAAAAJ">Kuan Fang</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a>Brandon Hung</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a>Maya Guru</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=WGdQIlEAAAAJ">Stefan Sosnowski</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a>Jiuguang Wang</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=1HUVcBkAAAAJ">Sandra Hirche</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=PfY9_xIAAAAJ">Simon Le Cleac'h</a><sup>2</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>TU Munich,</span>
+              <span class="author-block"><sup>2</sup>The AI Institute</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2408.01258" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2408.01258" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- Add video after acceptance  -->
+                <!-- <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=tbd"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+                <!-- Code Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/tbd" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Robotic manipulation is challenging and data-driven approaches typically require large amounts of data or
+              expert demonstrations. Therefore, we introduce a motion planner for dexterous and whole-body manipulation
+              tasks. The planner's demonstrations can directly be used by reinforcement learning. With this approach, we
+              can efficiently learn policies for complex manipulation tasks, where traditional reinforcement learning
+              alone only makes little progress.
+            </p>
+            <img src="./static/images/overview.png" class="publication-banner img" alt="Jacta overview" />
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <!-- <h2 class="title is-3">Overview Video</h2> -->
+          <!-- <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/tbd?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div> -->
+          <div class="content has-text-centered">
+            <video id="replay-video" controls preload playsinline width="100%">
+              <source src="./static/videos/overview_video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+
+      <!-- Results. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Results</h2>
+
+          <!-- Training. -->
+          <h3 class="title is-4">Policy Training</h3>
+          <div class="content has-text-justified">
+            <p>
+              Our method of adding demonstrations significantly robustifies and speeds up training performance compared
+              to pure reinforcement learning or using an additional pre-trained policy.
+            </p>
+            <img src="./static/images/results.png" class="publication-banner img" alt="Jacta results" />
+          </div>
+          <!--/ Training. -->
+
+          <!-- Simulation. -->
+          <h3 class="title is-4">Rollout in Simulation</h3>
+          <div class="content has-text-justified">
+            <p>
+              We train policies for dexterous in-hand manipulation and pick-and-place tasks and evaluate the policies in
+              simulation.
+            </p>
+          </div>
+
+          <div class="columns is-centered">
+
+            <!-- Floating Hand. -->
+            <div class="column">
+              <video id="floating-hand" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+                <source src="./static/videos/floating_hand.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!--/ Floating Hand. -->
+
+            <!-- Planar Hand. -->
+            <div class="column">
+              <video id="planar-hand" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+                <source src="./static/videos/planar_hand.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!--/ Planar Hand. -->
+          </div>
+
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-three-fifths">
+              <div class="content has-text-centered">
+                <video id="replay-video" autoplay loop controls muted preload playsinline width="100%">
+                  <source src="./static/videos/allegro_hand.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <!--/ Simulation. -->
+
+          <!-- Hardware. -->
+          <h3 class="title is-4">Rollout on Real Systems</h3>
+          <div class="content has-text-justified">
+            <p>
+              Additional polcies for dexterous and whole-body manipulation are evaluated on real systems with zero-shot
+              transfer.
+            </p>
+          </div>
+
+          <div class="columns is-centered">
+
+            <!-- Box grasp. -->
+            <div class="column">
+              <video id="floating-hand" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+                <source src="./static/videos/box_grasp.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!--/ Box grasp. -->
+
+            <!-- Ball turn. -->
+            <div class="column">
+              <video id="planar-hand" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+                <source src="./static/videos/ball_turn.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!--/ Ball turn. -->
+          </div>
+
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-three-fifths">
+              <div class="content has-text-centered">
+                <video id="replay-video" autoplay loop controls muted preload playsinline width="100%">
+                  <source src="./static/videos/stool_lift.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <!--/ Hardware. -->
+
+        </div>
+      </div>
+      <!--/ Results. -->
+
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{bruedigam2024jacta,
+  author    = {Br\"udigam, Jan and Abbas, Ali Adeeb and Sorokin, Maks and Fang, Kuan and Hung, Brandon and Guru, Maya and Sosnowski, Stefan and Wang, Jiuguang and Hirche, Sandra and Le Cleac'h, Simon},
+  title     = {Jacta: A Versatile Planner for Learning Dexterous and Whole-body Manipulation},
+  journal   = {arxiv tbd},
+  year      = {2024},
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Website borrowed from <a href="https://nerfies.github.io/">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
